@@ -1,7 +1,7 @@
 
-package repositories;
+package com.codeclan.example.many_to_many_lab.repositories;
 
-import models.Employee;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

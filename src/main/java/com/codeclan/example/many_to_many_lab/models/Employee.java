@@ -1,5 +1,5 @@
 
-package models;
+package com.codeclan.example.many_to_many_lab.models;
 
 import javax.persistence.*;
 import java.util.ArrayList;

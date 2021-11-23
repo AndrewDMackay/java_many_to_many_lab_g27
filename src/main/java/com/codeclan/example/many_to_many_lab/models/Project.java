@@ -1,30 +1,20 @@
 
-package models;
+package com.codeclan.example.many_to_many_lab.models;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "departments")
-public class Department {
+public class Project {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
-    @Column(name = "name")
     private String name;
+    private int duration;
 
     private List<Employee> employees;
 
-    public Department(String name) {
+    public Project(String name, int duration) {
         this.name = name;
+        this.duration = duration;
         this.employees = new ArrayList<>();
-    }
-
-    public Department(){
-
     }
 
     public String getName() {
@@ -33,6 +23,14 @@ public class Department {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 
     public List<Employee> getEmployees() {

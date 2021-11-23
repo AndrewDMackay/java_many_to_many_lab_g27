@@ -1,12 +1,10 @@
 
 package com.codeclan.example.many_to_many_lab;
 
-import models.Employee;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import repositories.EmployeeRepository;
+
 
 
 @SpringBootTest

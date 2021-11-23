@@ -1,12 +1,12 @@
 
-package controllers;
+package com.codeclan.example.many_to_many_lab.controllers;
 
-import models.Employee;
+import com.codeclan.example.many_to_many_lab.models.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import repositories.EmployeeRepository;
+import com.codeclan.example.many_to_many_lab.repositories.EmployeeRepository;
 
 import java.util.List;
 import java.util.Optional;
