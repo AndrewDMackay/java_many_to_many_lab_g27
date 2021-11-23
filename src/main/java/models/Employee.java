@@ -1,4 +1,6 @@
 
+package models;
+
 import javax.persistence.*;
 
 @Entity
@@ -16,7 +18,8 @@ public class Employee {
     @Column(name = "employeeNumber")
     private String employeeNumber;
 
-    public Employee(String name, int age, String employeeNumber, String email) {
+
+    public Employee(String name, int age, String employeeNumber) {
         this.name = name;
         this.age = age;
         this.employeeNumber = employeeNumber;
