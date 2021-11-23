@@ -18,6 +18,7 @@ public class Employee {
     @Column(name = "employeeNumber")
     private String employeeNumber;
 
+    private List<Project> projects;
 
     public Employee(String name, int age, String employeeNumber) {
         this.name = name;
