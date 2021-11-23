@@ -2,6 +2,8 @@
 package models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "employees")
@@ -24,6 +26,7 @@ public class Employee {
         this.name = name;
         this.age = age;
         this.employeeNumber = employeeNumber;
+        this.projects = new ArrayList<>();
     }
 
     public Employee(){
